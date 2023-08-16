@@ -16,6 +16,13 @@ class Solution: UIViewController {
     }
     
     func setupViews() {
+        
+        let outputField = createLabel()
+        view.addSubview(outputField)
+        outputField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+        outputField.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        outputField.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
         let zeroStack = createStackView()
         let buttonAC = makeButton(withText: "C")
         let buttonSign = makeButton(withText: "±")
@@ -28,7 +35,7 @@ class Solution: UIViewController {
         zeroStack.addArrangedSubview(buttonDivision)
         view.addSubview(zeroStack)
         
-        zeroStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        zeroStack.topAnchor.constraint(equalTo: outputField.bottomAnchor, constant: 8).isActive = true
         zeroStack.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         zeroStack.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
@@ -133,4 +140,18 @@ func createStackView() -> UIStackView {
     stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8)
     
     return stackView
+}
+
+func createLabel() -> UILabel {
+    let label = UILabel()
+    
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.textColor = .white
+    label.textAlignment = .right
+    label.backgroundColor = .gray
+    label.font = UIFont.systemFont(ofSize: 100)
+    label.text = "123456789"
+    label.adjustsFontSizeToFitWidth = true
+
+    return label
 }
