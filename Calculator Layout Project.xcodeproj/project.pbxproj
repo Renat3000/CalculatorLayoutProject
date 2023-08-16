@@ -11,6 +11,7 @@
 		CE8392F12A8A4F25001B20AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8392F02A8A4F25001B20AF /* Assets.xcassets */; };
 		CE8392F42A8A4F25001B20AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8392F22A8A4F25001B20AF /* LaunchScreen.storyboard */; };
 		CE8392FC2A8A4F71001B20AF /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8392FB2A8A4F71001B20AF /* Solution.swift */; };
+		CEC054702A8BB88B008EF9E5 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0546F2A8BB88B008EF9E5 /* Factories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		CE8392F32A8A4F25001B20AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8392F52A8A4F25001B20AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8392FB2A8A4F71001B20AF /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		CEC0546F2A8BB88B008EF9E5 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				CE8392E72A8A4F24001B20AF /* AppDelegate.swift */,
 				CE8392FB2A8A4F71001B20AF /* Solution.swift */,
+				CEC0546F2A8BB88B008EF9E5 /* Factories.swift */,
 				CE8392F02A8A4F25001B20AF /* Assets.xcassets */,
 				CE8392F22A8A4F25001B20AF /* LaunchScreen.storyboard */,
 				CE8392F52A8A4F25001B20AF /* Info.plist */,
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC054702A8BB88B008EF9E5 /* Factories.swift in Sources */,
 				CE8392E82A8A4F24001B20AF /* AppDelegate.swift in Sources */,
 				CE8392FC2A8A4F71001B20AF /* Solution.swift in Sources */,
 			);
